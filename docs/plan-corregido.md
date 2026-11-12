@@ -7,6 +7,25 @@
 
 Este documento tiene la versión corregida de los 20 casos que se automatizan. Los cambios frente a la versión de mitad de semestre están en [tabla-cambios.md](tabla-cambios.md).
 
+## Cambios al planteamiento general
+
+El planteamiento de mitad de semestre (alcance, objetivos y forma de probar) se mantiene, con estos ajustes:
+
+- **Alcance:** las pruebas automatizadas entran al alcance. Antes estaban en "Lo que no vamos a probar" ("Pruebas automatizadas. Todo lo hacemos a mano."). Ahora se automatizan 20 casos de Login, Carrito y Checkout. El resto del plan sigue siendo manual.
+- **Herramientas:**
+
+| Dato | Valor |
+|---|---|
+| Página | https://www.saucedemo.com |
+| Contraseña | secret_sauce |
+| Usuarios | standard_user, locked_out_user, problem_user, performance_glitch_user, error_user, visual_user |
+| Navegador | Google Chrome (manual) · Chromium (automatizado) |
+| Gestión | Jira (proyecto SCRUM) |
+| Automatización | Playwright + TypeScript, ejecutado en local y en GitHub Actions |
+
+- **Cómo probamos:** además de las pruebas manuales de caja negra, cada caso automatizado es un script que lleva el ID del caso, verifica su resultado esperado y genera un reporte (aprobada o fallida) en cada ejecución.
+- **Ejecución:** los 20 casos automatizados quedan ejecutados, con resultado, estado y fecha (ver [matriz-trazabilidad.md](matriz-trazabilidad.md)). Antes el plan tenía 17 de 178 casos ejecutados en Jira (la matriz entregada decía 16). Dos de los automatizados, CP-62.1 y CP-97.1, ya estaban ejecutados, así que el total sube a **35 de 178 (20 %)**. CP-62.1 y CP-97.1 dan el mismo resultado que en la ejecución manual: fallan por SCRUM-361 y SCRUM-365.
+
 Tipos: **P** = positivo · **N** = negativo · **VL** = valor límite.
 
 ---

@@ -1,8 +1,8 @@
 # Tabla de cambios del plan de pruebas
 
-Cambios hechos a los casos de la entrega de mitad de semestre antes de automatizarlos.
+Cambios hechos al plan de pruebas de la entrega de mitad de semestre antes de automatizarlo.
 
-> **Nota:** no tuve a la mano la retroalimentación escrita de la entrega de mitad de semestre. Por eso las correcciones siguen los criterios que pide esta entrega: cada caso necesita **datos concretos** y un **resultado esperado verificable** (mensaje exacto, URL o estado de la pantalla). Si la retroalimentación pide algo más, se agrega aquí.
+> **Nota:** no se recibió retroalimentación escrita de la entrega de mitad de semestre. Por eso las correcciones son una autoevaluación con los criterios que pide esta entrega: cada caso necesita **datos concretos** y un **resultado esperado verificable** (mensaje exacto, URL o estado de la pantalla). Si llega la retroalimentación, se agrega aquí.
 
 | # | Caso | Qué se corrigió | Por qué |
 |---|---|---|---|
@@ -17,4 +17,7 @@ Cambios hechos a los casos de la entrega de mitad de semestre antes de automatiz
 | 9 | CP-61.1 | Se escribieron los nombres de los 6 productos y se agregó "cada uno una vez" al resultado esperado. | "Los 6 productos" no decía cuáles. Así se detecta también un producto repetido. |
 | 10 | CP-2.1 a CP-7.1 | Precondición: de "En la página de login" a la URL https://www.saucedemo.com/. Resultado esperado: de "permanece en login" a "permanece en https://www.saucedemo.com/". | Una URL concreta se puede comprobar; "la página de login" no. |
 | 11 | Los 20 casos | Se agregó el tipo de caso (positivo, negativo o valor límite) y la historia de la que sale cada caso. | La entrega pide casos positivos, negativos y de valor límite, y trazabilidad con las historias. |
-| 12 | Los 20 casos | Resultado obtenido: de "Pendiente de ejecución" al resultado de la ejecución automatizada (ver matriz de trazabilidad). | Ya se ejecutaron. |
+| 12 | 18 de los 20 casos | Resultado obtenido: de "Pendiente de ejecución" al resultado de la ejecución automatizada (CP-62.1 y CP-97.1 ya estaban ejecutados a mano) (ver matriz de trazabilidad). | Ya se ejecutaron. |
+| 13 | Planteamiento · Alcance | "Pruebas automatizadas. Todo lo hacemos a mano." sale de "Lo que no vamos a probar". Las pruebas automatizadas entran al alcance (20 casos de Login, Carrito y Checkout). | El plan decía que no se automatizaba nada, y esta entrega es justamente automatizar. Si no se corrige, el plan contradice lo que se entrega. |
+| 14 | Planteamiento · Herramientas | Se agregó Playwright + TypeScript (en local y en GitHub Actions) a la tabla de herramientas, que antes solo tenía Jira y Chrome. | El plan tiene que decir con qué se ejecutan las pruebas. |
+| 15 | Planteamiento · Ejecución | Los casos ejecutados pasan de 17 de 178 a 35 de 178 (20 %). Los 18 casos automatizados que estaban en "Pendiente de ejecución" ya tienen resultado, estado y fecha. | En la entrega anterior la ejecución era el punto más débil (9 %). El enunciado de mitad de semestre pedía evidencia de que los casos se corrieron. |
