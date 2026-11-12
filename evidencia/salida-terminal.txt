@@ -1,0 +1,25 @@
+
+Running 20 tests using 4 workers
+
+  ok  2 [chromium] › tests\carrito.spec.ts:17:3 › Carrito › CP-39.1 Contador con dos productos (3.2s)
+  ok  3 [chromium] › tests\carrito.spec.ts:27:3 › Carrito › CP-40.1 Contador al quitar el último producto (valor límite 1 → 0) (3.4s)
+  ok  4 [chromium] › tests\carrito.spec.ts:38:3 › Carrito › CP-61.1 Seis productos (valor límite: todo el catálogo) (3.3s)
+  ok  5 [chromium] › tests\checkout.spec.ts:25:3 › Checkout › CP-75.1 Nombre vacío (2.0s)
+  ok  6 [chromium] › tests\checkout.spec.ts:34:3 › Checkout › CP-76.1 Apellido vacío (2.2s)
+  ok  7 [chromium] › tests\checkout.spec.ts:43:3 › Checkout › CP-77.1 Código postal vacío (2.2s)
+  ok  8 [chromium] › tests\checkout.spec.ts:52:3 › Checkout › CP-85.1 Total (2.2s)
+  ok  9 [chromium] › tests\checkout.spec.ts:63:3 › Checkout › CP-89.1 Checkout: Complete! (2.4s)
+  x   1 [chromium] › tests\carrito.spec.ts:54:3 › Carrito › CP-62.1 Abrir carrito vacío (valor límite 0 productos) (8.9s)
+  ok 11 [chromium] › tests\login.spec.ts:12:3 › Login › CP-1.1 Login exitoso con standard_user (1.7s)
+  ok 12 [chromium] › tests\login.spec.ts:24:3 › Login › CP-2.1 Usuario inexistente (1.4s)
+  ok 13 [chromium] › tests\login.spec.ts:34:3 › Login › CP-3.1 Contraseña incorrecta (1.3s)
+  ok 14 [chromium] › tests\login.spec.ts:44:3 › Login › CP-4.1 Campo usuario vacío (1.3s)
+  ok 15 [chromium] › tests\login.spec.ts:54:3 › Login › CP-5.1 Campo contraseña vacío (1.3s)
+  ok 16 [chromium] › tests\login.spec.ts:64:3 › Login › CP-6.1 Ambos campos vacíos (1.2s)
+  ok 17 [chromium] › tests\login.spec.ts:75:3 › Login › CP-7.1 Login con locked_out_user (1.4s)
+  ok 19 [chromium] › tests\login.spec.ts:99:3 › Login › CP-18.1 Acceso directo por URL sin sesión (1.3s)
+  ok 20 [chromium] › tests\login.spec.ts:109:3 › Login › CP-146.1 Usuario con mayúsculas (1.3s)
+  ok 18 [chromium] › tests\login.spec.ts:85:3 › Login › CP-17.1 Logout desde el catálogo (2.8s)
+  x  10 [chromium] › tests\checkout.spec.ts:74:3 › Checkout › CP-97.1 Código postal con letras y símbolos (8.2s)
+
+  20 passed (15.9s)
